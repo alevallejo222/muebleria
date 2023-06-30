@@ -1,0 +1,403 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* fuente de texto*/
+  font-family: "Oswald", sans-serif;
+  /*Aqui esta el fondo de la pagina*/
+  background-color: #000000;
+  color: #fff;
+  font-size: 16px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  /*Aqui esta la barra de navegacion*/
+  width: 98%;
+  margin: auto;
+}
+
+/* Navegacion */
+.nav-main {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 20px 0;
+  background-color:#1e73be;
+}
+
+/* tamaño de el icono de la cocha*/
+.nav-brand {
+  width: 83px;
+}
+
+/* Navegacion izquierda */
+.nav-main ul {
+  display: flex;
+}
+
+.nav-main ul li {
+  padding: 10px;
+}
+
+.nav-main ul li a {
+  padding: 2px;
+}
+
+.nav-main ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+
+
+/* Responsive Button */
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  z-index: 2;
+  display: none;
+}
+
+/* SHOWCASE */
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #fff;
+
+}
+/* Puntero sobre el boton*/
+.btn:hover {
+  opacity: 0.9;
+}
+
+.showcase {
+  width: auto;
+  height: 550px;
+  background: url("img/LA-COCHA.jpg") no-repeat center center;
+  background-size: 1500px;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  margin-top: 12px;
+  padding-bottom: 37px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.showcase h2,
+
+.showcase p{
+  margin-bottom: 10px;
+  backdrop-filter: contrast(17%);
+}
+
+.showcase .btn {
+  margin-top: 20px;
+}
+
+/*segunda pagina*/
+.showcase_page2{
+  width: auto;
+  height: 500px;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  margin-top: 12px;
+  padding-bottom: 37px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+.showcase_page2 .parrafo2{
+  margin-bottom: 133px;
+  backdrop-filter: blur(9px);
+  font-family:'Times New Roman', Times, serif;
+  color: black;
+  font-size: 55px;
+}
+
+.parallax{
+  background: url("img/pexels-karolina-grabowska-7681194.jpg") no-repeat center center;
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+
+
+/*Aqui estan las tarjetas de carreras*/
+.news-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 70px 0;
+}
+
+.news-cards img {
+  width: 100%;
+  height: 180px;
+}
+
+.news-cards h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.news-cards a:hover{
+  border-bottom: 2px solid #fff;
+  padding: 10px 0;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/*Aqui estan las tarjetas de la segunda pagina*/
+.news-cards2{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 70px 0;
+  background: url("img/pexels-skitterphoto-411011.jpg");
+}
+
+.news-cards2 img {
+  width: 100%;
+  height: 180px;
+}
+
+.news-cards2 h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.news-cards2 a:hover{
+  border-bottom: 2px solid #fff;
+  padding: 10px 0;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+}
+
+
+/* Tarjetas de carreras 1 */
+.cards-banner-one {
+  width: 100%;
+  height: 350px;
+  background: url("img/194877_10150118796269628_783740_o-1100x409.jpg");
+  margin-bottom: 70px;
+}
+
+.cards-banner-one .content {
+  width: 40%;
+  padding: 90px 0 0 30px;
+  color: #fff;
+}
+
+.cards-banner-one p,
+.cards-banner-two p {
+  margin: 10px 0 20px 0;
+}
+
+/*Tarjetas de carreras 2 y ubicacion*/
+
+.cards-banner-two .content {
+  width: 50%;
+  padding: 100px 0 0 30px;
+}
+
+/* Nuestras Redes */
+.social {
+  margin: 50px;
+}
+.social p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  margin: 0 30px;
+}
+
+.links a i {
+  font-size: 3rem;
+}
+
+/* Links */
+.footer-links {
+  background: #2f3640;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-container ul {
+  margin: 0 auto;
+}
+
+.footer-links li{
+  line-height: 2.8;
+}
+
+.footer-container a:hover{
+  border-bottom: 2px solid #fff;
+}
+
+.footer {
+  background: #2f3640;
+  color: #616161;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 20px;
+
+}
+
+/* Ministerio de Educacion */
+.grid-container {
+font-weight: 400;
+text-transform: none;
+font-size: 17px;
+color: #3a3a3a;
+font-family: "Roboto", sans-serif;
+line-height: 1.5;
+text-align: center;
+max-width: 1700px;
+background-color: #ffffff;
+}
+
+
+/* Para el celular */
+@media (max-width: 800px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+
+  .nav-main ul.nav-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .nav-main ul.nav-menu li {
+    padding: 20px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+  }
+  .nav-main ul.nav-menu li:last-child {
+    border-bottom: 0;
+  }
+
+  .nav-main ul.nav-menu.show {
+    transform: translateX(-20px);
+  }
+
+  .nav-main ul.nav-menu-right {
+    margin-right: 50px;
+  }
+
+  .news-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards-banner-one .content,
+  .cards-banner-two .content {
+    width: 80%;
+  }
+
+  .footer-links .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .news-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-banner-one .content,
+  .cards-banner-two .content {
+    width: 100%;
+    padding: 60px 20px;
+  }
+  .footer-links .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links .footer-container ul {
+    text-align: center;
+  }
+  
+  
+}
